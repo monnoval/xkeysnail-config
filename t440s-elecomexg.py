@@ -14,8 +14,6 @@ define_modmap({
     # ELECOM 'EX-G WIRED TRACKBALL
     Key.BTN_SIDE: Key.ENTER,
 
-    # Thinkpad T440s trackpad buttons
-    Key.BTN_MIDDLE: Key.ESC,
 })
 
 # Keybindings for Editor
@@ -51,6 +49,7 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
 
     # ELECOM 'EX-G WIRED TRACKBALL
     K("BTN_EXTRA"): K("C-w"),
-    K("BTN_FORWARD"): K("C-f7"),
+    K("BTN_FORWARD"): [launch(["xfdashboard"])],
+
 
 }, "All apps")
