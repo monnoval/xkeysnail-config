@@ -33,7 +33,7 @@ define_keymap(re.compile("Firefox|firefox|Chromium|LibreWolf"), {
 # Affects all apps
 define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
 
-    # Thinkpad T440s default keyboard
+    # Xfce launch apps
     K("RShift-T"): [launch(["xfce4-terminal"])],
     K("RShift-V"): [launch(["nvim-qt"])],
     K("RShift-X"): [launch(["xkill"])],

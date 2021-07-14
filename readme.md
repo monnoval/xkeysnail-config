@@ -2,6 +2,14 @@
 
 List of config files I use for different device setups.
 
+#### Run in startup
+
+Do `which xkeysnail` to know the location of xkeysnail then add the following in your Application Autostart (or anything similar in the DE you are using)
+
+```
+/usr/local/bin/xkeysnail /home/YOUR_USERNAME/.xkeysnail-config/SELECT_CONFIG.py --devices /dev/input/event# /dev/input/event# --quiet
+```
+
 #### [Run xkeysnail without sudo](https://github.com/mooz/xkeysnail/issues/64#issuecomment-600380800)
 
 ```
