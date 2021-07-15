@@ -40,8 +40,4 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
     K("RShift-F"): [launch(["thunar"])],
     K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
 
-    # Thinkpad T440s trackpad buttons
-    K("BTN_RIGHT"): K("ENTER"),
-    K("LC-BTN_RIGHT"): K("BTN_RIGHT"),
-
 }, "All apps")
