@@ -46,6 +46,7 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
     K("RShift-X"): [launch(["xkill"])],
     K("RShift-F"): [launch(["thunar"])],
     K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+    K("RShift-KEY_1"): [launch(["1password"])],
 
     # ELECOM 'EX-G WIRED TRACKBALL
     K("BTN_EXTRA"): K("C-w"),
