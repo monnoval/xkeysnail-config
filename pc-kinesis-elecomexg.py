@@ -15,6 +15,7 @@ define_modmap({
 
 # [Conditional modmap] Change modifier keys in certain applications
 define_conditional_modmap(re.compile('Gvim|nvim-qt'), {
+    # Kinesis Advantage
     Key.RIGHT_META: Key.RIGHT_CTRL,
 })
 
@@ -33,12 +34,14 @@ define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|LibreWolf"), {
 # Affects all apps
 define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
 
-    # KDE neon launch apps
-    K("RShift-T"): [launch(["konsole"])],
+    # Linux apps
     K("RShift-V"): [launch(["nvim-qt"])],
     K("RShift-X"): [launch(["xkill"])],
-    K("RShift-F"): [launch(["dolphin"])],
     K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+
+    # KDE neon launch apps
+    K("RShift-T"): [launch(["konsole"])],
+    K("RShift-F"): [launch(["dolphin"])],
     K("RShift-KEY_1"): [launch(["/opt/1Password/1password","%U"])],
 
     # ELECOM 'EX-G WIRED TRACKBALL
