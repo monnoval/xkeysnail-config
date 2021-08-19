@@ -19,11 +19,11 @@ define_conditional_modmap(re.compile('Gvim|nvim-qt'), {
     Key.RIGHT_META: Key.RIGHT_CTRL,
 })
 
-# Keybindings for Browsers
+# Keybindings for editors
 define_keymap(re.compile("Gvim|nvim-qt"), {
     # ELECOM 'EX-G WIRED TRACKBALL
     K("BTN_EXTRA"): K("C-q"),
-}, "Gvim")
+}, "Editors")
 
 # Keybindings for Browsers
 define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|LibreWolf"), {
