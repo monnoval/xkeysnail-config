@@ -6,8 +6,6 @@ from xkeysnail.transform import *
 # [Global modemap] Change modifier keys as in xmodmap
 define_modmap({
     # ELECOM HUGE
-    # Key.BTN_BACK: Key.ENTER,
-    # Key.BTN_SIDE: Key.SPACE,
     Key.BTN_BACK: Key.ENTER,
     Key.BTN_SIDE: Key.ENTER,
     Key.BTN_EXTRA: Key.BTN_MOUSE,
