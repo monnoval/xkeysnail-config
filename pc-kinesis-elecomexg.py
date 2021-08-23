@@ -14,13 +14,13 @@ define_modmap({
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
-define_conditional_modmap(re.compile('Gvim|nvim-qt'), {
+define_conditional_modmap(re.compile('nvim-qt'), {
     # Kinesis Advantage
     Key.RIGHT_META: Key.RIGHT_CTRL,
 })
 
 # Keybindings for editors
-define_keymap(re.compile("Gvim|nvim-qt"), {
+define_keymap(re.compile("nvim-qt"), {
     # ELECOM 'EX-G WIRED TRACKBALL
     K("BTN_EXTRA"): K("C-q"),
 }, "Editors")

@@ -1,0 +1,19 @@
+## General
+.cvs
+.htaccess
+.svn
+*.bak
+*.log
+*.swp
+*.sublime-*
+*.idea
+*.cache
+tags
+tags.*
+
+## Windows
+Desktop.ini
+Thumbs.db
+
+## Mac
+.DS_Store
