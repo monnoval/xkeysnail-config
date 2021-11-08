@@ -37,10 +37,10 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
     # Linux apps
     K("RShift-V"): [launch(["nvim-qt"])],
     K("RShift-X"): [launch(["xkill"])],
-    K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+    K("RShift-W"): [launch(["/opt/firefox-developer/firefox","-new-tab","about:newtab"])],
 
     # KDE neon launch apps
-    K("RShift-T"): [launch(["konsole"])],
+    K("RShift-T"): [launch(["konsole","--profile","dedge"])],
     K("RShift-F"): [launch(["dolphin"])],
     K("RShift-KEY_1"): [launch(["/opt/1Password/1password","%U"])],
 
