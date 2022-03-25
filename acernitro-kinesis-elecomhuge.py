@@ -43,7 +43,7 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
     K("RShift-V"): [launch(["nvim-qt"])],
     # K("RShift-X"): [launch(["xkill"])],
     K("RShift-F"): [launch(["nautilus"])],
-    K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+    K("RShift-W"): [launch(["/opt/firefox-developer/firefox","-new-tab","about:newtab"])],
 
     # ELECOM HUGE
     K("BTN_FORWARD"): K("C-w"),
