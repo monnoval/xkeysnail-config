@@ -30,7 +30,7 @@ define_keymap(re.compile("nvim-qt"), {
 }, "Editor")
 
 # Keybindings for Browsers
-define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|LibreWolf"), {
+define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|Brave"), {
     K("C-right"): K("C-TAB"),
     K("C-left"): K("C-Shift-TAB"),
 }, "Browsers")
