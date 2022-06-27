@@ -22,13 +22,13 @@ define_conditional_modmap(re.compile('nvim-qt'), {
 })
 
 # Keybindings for Browsers
-define_keymap(re.compile("Gvim|nvim-qt"), {
+define_keymap(re.compile("nvim-qt"), {
     # ELECOM HUGE
     K("BTN_FORWARD"): K("C-q"),
 }, "Gvim")
 
 # Keybindings for Browsers
-define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|LibreWolf"), {
+define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|Brave"), {
     K("C-right"): K("C-TAB"),
     K("C-left"): K("C-Shift-TAB"),
 }, "Browsers")
@@ -39,18 +39,17 @@ define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
     # Linux apps
     K("RShift-V"): [launch(["nvim-qt"])],
     K("RShift-X"): [launch(["xkill"])],
-    K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+    K("RShift-W"): [launch(["brave-browser-beta","about:newtab"])],
 
-    # Xfce launch apps
-    K("RShift-T"): [launch(["xfce4-terminal"])],
-    K("RShift-F"): [launch(["thunar"])],
-    K("RShift-KEY_1"): [launch(["1password"])],
+    # Plasma launch apps
+    K("RShift-T"): [launch(["konsole","--profile","work"])],
+    K("RShift-F"): [launch(["dolphin"])],
 
     # ELECOM HUGE
     K("BTN_FORWARD"): K("C-w"),
-    K("BTN_TASK"): [launch(["xfdashboard"])],
+    K("BTN_TASK"): K("C-f7"),
 
     # Kinesis Advantage
-    K("HOME"): [launch(["xfdashboard"])],
+    K("HOME"): K("C-f9"),
 
 }, "All apps")

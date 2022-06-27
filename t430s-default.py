@@ -16,7 +16,7 @@ define_modmap({
 })
 
 # Keybindings for Browsers
-define_keymap(re.compile("Firefox|firefox|Chromium|LibreWolf"), {
+define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|Brave"), {
 
     # Next and previous tab
     K("C-left"): K("C-Shift-TAB"),
@@ -33,11 +33,13 @@ define_keymap(re.compile("Firefox|firefox|Chromium|LibreWolf"), {
 # Affects all apps
 define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
 
-    # Xfce launch apps
-    K("RShift-T"): [launch(["xfce4-terminal"])],
+    # Linux apps
     K("RShift-V"): [launch(["nvim-qt"])],
     K("RShift-X"): [launch(["xkill"])],
-    K("RShift-F"): [launch(["thunar"])],
-    K("RShift-W"): [launch(["firefox","-new-tab","about:newtab"])],
+    K("RShift-W"): [launch(["brave-browser-beta","about:newtab"])],
+
+    # Plasma launch apps
+    K("RShift-T"): [launch(["konsole","--profile","work"])],
+    K("RShift-F"): [launch(["dolphin"])],
 
 }, "All apps")
