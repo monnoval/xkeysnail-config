@@ -5,7 +5,6 @@ from xkeysnail.transform import *
 
 # [Global modemap] Change modifier keys as in xmodmap
 define_modmap({
-
     # Kinesis Advantage
     Key.RIGHT_META: Key.RIGHT_CTRL,
     Key.LEFT_CTRL: Key.RIGHT_META,
@@ -14,7 +13,6 @@ define_modmap({
     Key.BTN_BACK: Key.ENTER,
     Key.BTN_SIDE: Key.ENTER,
     Key.BTN_EXTRA: Key.BTN_MOUSE,
-
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
@@ -27,7 +25,7 @@ define_conditional_modmap(re.compile('nvim-qt'), {
 define_keymap(re.compile("nvim-qt"), {
     # ELECOM HUGE
     K("BTN_FORWARD"): K("C-q"),
-}, "Editor")
+}, "Gvim")
 
 # Keybindings for Browsers
 define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|Brave"), {
@@ -38,18 +36,20 @@ define_keymap(re.compile("Firefox|firefox|Google-chrome|Chromium|Brave"), {
 # Affects all apps
 define_keymap(lambda wm_class: wm_class not in ("AnAppThatDoesNotExist"), {
 
-    # Gnome for Fedora Workstation
-    K("RShift-T"): [launch(["gnome-terminal"])],
+    # Linux apps
     K("RShift-V"): [launch(["nvim-qt"])],
-    # K("RShift-X"): [launch(["xkill"])],
-    K("RShift-F"): [launch(["nautilus"])],
-    K("RShift-W"): [launch(["/opt/firefox-developer/firefox","-new-tab","about:newtab"])],
+    K("RShift-X"): [launch(["xkill"])],
+    K("RShift-W"): [launch(["brave-browser-beta","about:newtab"])],
+
+    # Plasma launch apps
+    K("RShift-T"): [launch(["konsole","--profile","work"])],
+    K("RShift-F"): [launch(["dolphin"])],
 
     # ELECOM HUGE
     K("BTN_FORWARD"): K("C-w"),
-    K("BTN_TASK"): K("C-Space"),
+    K("BTN_TASK"): K("C-f7"),
 
     # Kinesis Advantage
-    K("HOME"): K("C-Space"),
+    K("HOME"): K("C-f9"),
 
 }, "All apps")
