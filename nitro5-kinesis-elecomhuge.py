@@ -12,7 +12,7 @@ define_modmap({
 })
 
 # Keybindings for Browsers
-define_keymap(re.compile("firefox|chromium|Brave"), {
+define_keymap(re.compile("firefox|chromium|Brave|librewolf"), {
     K("C-right"): K("C-TAB"),
     K("C-left"): K("C-Shift-TAB"),
 }, "Browsers")
