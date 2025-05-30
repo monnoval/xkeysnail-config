@@ -1,5 +1,8 @@
 # xkeysnail config for different devices
 
+> [!WARNING]
+> xkeysnail is not maintained anymore, moved to using [xremap](https://github.com/xremap/xremap)
+
 List of config files I use for different device setups.
 
 ---
